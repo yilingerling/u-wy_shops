@@ -1,0 +1,10 @@
+{
+	"name": "uwy-shops",
+	"version": "1.0.0",
+	"sripts": {
+		"start": "nodemon srever.js"
+	},
+	"dependencies": {
+		"vuex": "^3.1.2"
+	}
+}

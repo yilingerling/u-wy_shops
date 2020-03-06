@@ -2,32 +2,27 @@
 	<view class="content">
 		<view class="navList">
 			<scroll-view scroll-x="true">
-			  <view class="navItem">AAAAAAAAA</view>
-			  <view class="navItem">BBBBBBBBB</view>
-			  <view class="navItem">CCCCCCCCC</view>   
-			  <view class="navItem">AAAAAAAAA</view>
-			  <view class="navItem">BBBBBBBBB</view>
-			  <view class="navItem">CCCCCCCCC</view> 
-			  <view class="navItem">AAAAAAAAA</view>
-			  <view class="navItem">BBBBBBBBB</view>
-			  <view class="navItem">CCCCCCCCC</view> 
+			  <view class="navItem">推荐</view>
+			  <view class="navItem" v-for="(item,index) in navList" :key="index">{{item.text}}</view>
 			</scroll-view>               
 		</view>
 	</view>
 </template>
 
 <script>
+	import {request} from "../../utils/request.js"
 	export default {
 		data() {
 			return {
-				
+				navList:[]
 			}
 		},
-		onLoad() {
-
-		},
 		methods: {
-
+			
+		},
+		async mounted(){
+			let result =await request("/index")
+			this.navList = result.kingKongModule.kingKongList
 		}
 	}
 </script>
