@@ -1,0 +1,28 @@
+.header.data-v-4653b5ca {
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  position: fixed;
+  padding-top: 5rpx;
+}
+.header ._h1.data-v-4653b5ca {
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-family: STSong;
+}
+.header .search.data-v-4653b5ca {
+  width: 350rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 10rpx;
+  border-radius: 15rpx;
+  border: 1px solid #333;
+}
+
