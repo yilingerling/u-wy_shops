@@ -1,14 +1,10 @@
 <template>
 	<view class="content">
-		<view class="hegintNull">
-			
-		</view>
 		<ListHeader/>
-		<view class="hegintNull1">
-			
-		</view>		
+					
 		<view class="navList">
-			<scroll-view scroll-x="true">
+			
+			<scroll-view scroll-x="true" class="svTop">
 			  <view class="navItem">推荐</view>
 			  <view class="navItem" v-for="(item,index) in navList" :key="index">{{item.text}}</view>
 			</scroll-view>               
@@ -21,6 +17,7 @@
 </template>
 
 <script>
+	
 	import {request} from "../../utils/request.js"
 	import Header from "../../components/header/header.vue"
 	import HeaderSwiper from "../../components/headerSwiper/headerSwiper.vue"
@@ -41,17 +38,15 @@
 			let result =await request("/index")
 			let navs= result.kingKongModule.kingKongList
 			this.navList = navs.slice(1,9)
+			
 		}
 	}
 </script>
 
-<style lang="stylus" scoped>
-	.hegintNull
-		width 100%
-		height 50upx
-	.hegintNull1
-		width 100%
-		height 90upx
+<style lang="stylus">
+	.content
+		width 100vw
+		height 100%	
 	.navList
 		display flex
 		flex-wrap nowrap

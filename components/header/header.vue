@@ -1,38 +1,27 @@
-<template>
-	<view class="header">
-		<h1>
-			<a>网易严选</a>
-		</h1>
-		<div class="search">
-			
-		</div>
-	</view>
+<template>	
+<bar :nav="setNav"></bar>	
 </template>
 
 <script>
+	import bar from "./bar.vue"
+	export default{
+		components:{
+			bar
+		},
+		data() {
+			return {
+				// 自定义导航栏对象
+					setNav:{
+					'bg':'yellow',  //背景色
+					'color':'red',  //字体颜色
+					'isdisPlayNavTitle':true//是否显示返回按钮，由于导航栏是共用的，把所有的东西封装好，
+					// 然后有些页面不需要的东西通过条件控制进行显示与隐藏
+				}
+			}
+		}
+	}
 </script>
 
-<style lang="stylus" scoped>
-	.header
-		width 100%
-		height 90upx
-		line-height 90upx
-		display flex
-		box-sizing border-box
-		position fixed
-		padding-top 5upx
-		h1
-			width 180upx
-			height 60upx
-			line-height 50upx
-			text-align center
-			font-size 40upx
-			font-family STSong
-		.search
-			width 350upx
-			height 50upx
-			line-height 50upx
-			margin-left 10upx
-			border-radius 15upx
-			border 1px solid #333333
+<style>
+ 
 </style>

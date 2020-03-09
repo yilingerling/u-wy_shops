@@ -1,20 +1,12 @@
 <template>
 	<view class="headerSwiper">
-		 <view>
-		        <view class="uni-padding-wrap">
-		            <view class="page-section swiper">
-		                <view class="page-section-spacing">
-		                    <swiper class="swiper" :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
-		                        <swiper-item  v-for="(item,index) in navSwiper" :key="index">
-		                            <view class="swiper-item uni-bg-red">
-										<image :src="item.picUrl" mode=""></image>
-									</view>
-		                        </swiper-item>
-		                    </swiper>
-		                </view>
-		            </view>
-		        </view>
-		    </view>
+		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" class="swipers">
+			<swiper-item  v-for="(item,index) in navSwiper" :key="index">
+				<view class="swiper-item">
+					<image :src="item.picUrl" mode=""></image>
+				</view>
+			</swiper-item>			
+		</swiper>	   
 	</view>
 </template>
 
@@ -54,10 +46,14 @@
 	}
 </script>
 
-<style lang="stylus" scoped>
-.headerSwiper
-	width 100%
+<style lang="stylus">
+.swipers
+	width 750upx
 	height 400upx
-	image
-		width 100%
+	swiper-item
+		.swiper-item
+			image
+				width 100%
+				height 400upx
+
 </style>

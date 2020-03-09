@@ -1,6 +1,6 @@
 {
-  "navigationBarTitleText": "首页",
   "navigationStyle": "custom",
+  "navigationBarTitleText": "首页",
   "usingComponents": {
     "header-swiper": "/components/headerSwiper/headerSwiper",
     "list-header": "/components/header/header"

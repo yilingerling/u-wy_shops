@@ -1,10 +1,17 @@
 {
-	"name": "uwy-shops",
-	"version": "1.0.0",
-	"sripts": {
-		"start": "nodemon srever.js"
-	},
-	"dependencies": {
-		"vuex": "^3.1.2"
-	}
+  "name": "uwy-shops",
+  "version": "1.0.0",
+  "sripts": {
+    "start": "nodemon srever.js"
+  },
+  "dependencies": {
+    "@tarojs/components": "^2.0.6",
+    "@tarojs/taro": "^2.0.6",
+    "@tarojs/taro-h5": "^2.0.6",
+    "miniprograms-navigation-bar": "^2.0.2",
+    "nervjs": "^1.5.6",
+    "taro": "^0.0.7",
+    "taro-navigationbar": "^2.1.1",
+    "vuex": "^3.1.2"
+  }
 }

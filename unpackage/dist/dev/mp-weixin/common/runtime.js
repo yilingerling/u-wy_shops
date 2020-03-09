@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/header/header":1,"components/headerSwiper/headerSwiper":1};
+/******/ 		var cssChunks = {"components/headerSwiper/headerSwiper":1,"components/header/bar":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/header/header":"components/header/header","components/headerSwiper/headerSwiper":"components/headerSwiper/headerSwiper"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/header/header":"components/header/header","components/headerSwiper/headerSwiper":"components/headerSwiper/headerSwiper","components/header/bar":"components/header/bar"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
