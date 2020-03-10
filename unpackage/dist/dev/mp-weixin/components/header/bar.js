@@ -139,7 +139,7 @@ var _default =
     uni.getSystemInfo({
       success: function success(res) {
         if (res.model.indexOf('iPhone') !== -1) {
-          that.titleBarHeight = 44 + 'px';
+          that.titleBarHeight = 43 + 'px';
         } else {
           that.titleBarHeight = 48 + 'px';
         }

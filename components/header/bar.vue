@@ -21,7 +21,7 @@
 			 	uni.getSystemInfo({
 			 		success: function(res) {
 			 			if (res.model.indexOf('iPhone') !== -1) {
-							that.titleBarHeight = 44 + 'px';
+							that.titleBarHeight = 43 + 'px';
 			 			} else {
 			 				that.titleBarHeight = 48  + 'px';
 						}
@@ -46,16 +46,23 @@
 	}
 	
 	.header .header-title {
+		width: 44%;
+		height: 60upx;
 		position: absolute;
 		left: 50%;
-		font-size: 38upx;
-		transform: translateX(-50%);
+		transform: translateX(-55%);
+		margin-bottom: 5upx;
+		border-radius:10upx ;
+		background-color: #EDEDED;
 	}
 	.header-back{
 		position: absolute;
 		left:15upx;
-		font-size:40upx;
-		padding: 10upx;
+		font-size:38upx;
+		padding: 5upx 10upx 10upx 10upx;
 		border-radius: 50%;
+		color: #3c3c3c;
+		font-family: SimSun;
+		font-weight: 600;
 	}
 </style>

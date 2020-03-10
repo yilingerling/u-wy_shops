@@ -13,17 +13,24 @@
 	left:0;
 }
 .header .header-title {
+	width: 44%;
+	height: 60rpx;
 	position: absolute;
 	left: 50%;
-	font-size: 38rpx;
-	-webkit-transform: translateX(-50%);
-	        transform: translateX(-50%);
+	-webkit-transform: translateX(-55%);
+	        transform: translateX(-55%);
+	margin-bottom: 5rpx;
+	border-radius:10rpx;
+	background-color: #EDEDED;
 }
 .header-back{
 	position: absolute;
 	left:15rpx;
-	font-size:40rpx;
-	padding: 10rpx;
+	font-size:38rpx;
+	padding: 5rpx 10rpx 10rpx 10rpx;
 	border-radius: 50%;
+	color: #3c3c3c;
+	font-family: SimSun;
+	font-weight: 600;
 }
 

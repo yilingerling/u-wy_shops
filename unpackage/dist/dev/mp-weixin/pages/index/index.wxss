@@ -1,17 +1,39 @@
 .content {
   width: 100vw;
   height: 100%;
+  background-color: #eee;
+  height: 5000rpx;
 }
 .navList {
+  width: 100vw;
+  height: 75rpx;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: nowrap;
           flex-wrap: nowrap;
   white-space: nowrap;
+  background-color: #fff;
+  padding: 5rpx 0;
+  font-size: 36rpx;
+  position: fixed;
+  z-index: 99;
 }
-.navList .navItem {
+.navList .svTop .navItem {
   display: inline-block;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.navList .svTop .navItem:nth-child(1) {
+  margin-left: 50rpx;
+}
+.navList .svTop .navItem:nth-last-child(1) {
+  margin-right: 50rpx;
+}
+.nullBox {
+  width: 100%;
+  height: 75rpx;
 }
 .swipers {
   width: 100%;
